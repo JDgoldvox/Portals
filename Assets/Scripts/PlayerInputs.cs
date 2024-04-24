@@ -5,8 +5,6 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private PlayerInputActions S_PlayerInputActions;
     public float mouseSensitivity;
-    private float cameraVerticalRotation = 0f;
-    private float cameraHorizontalRotation = 0f;
     public Transform forward;
 
     private Rigidbody rb;
@@ -16,9 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-        // Lock and Hide the Cursor
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+       
     }
 
     private void Awake()
@@ -32,19 +28,16 @@ public class NewBehaviourScript : MonoBehaviour
     private void OnEnable()
     {
         move.Enable();
-        look.Enable();
     }
 
     private void OnDisable()
     {
         move.Disable();
-        look.Disable() ;
     }
 
     private void Update()
     {
         OnMove();
-        OnLook();
         OnRotate();
     }
     private void OnMove()
@@ -52,20 +45,6 @@ public class NewBehaviourScript : MonoBehaviour
         Vector2 direction = move.ReadValue<Vector2>();
         Vector3 movement = new Vector3(-direction.x, 0.0f, -direction.y);
         rb.AddForce(movement * speed, ForceMode.Impulse);
-    }
-
-    private void OnLook()
-    {
-        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-
-        cameraVerticalRotation += inputY;
-        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -65f, 65f);
-
-        cameraHorizontalRotation += inputX;
-
-        transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
-        transform.Rotate(Vector3.up * cameraHorizontalRotation);    
     }
 
     void OnRotate() 
