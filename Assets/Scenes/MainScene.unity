@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 723704922}
   - component: {fileID: 723704921}
   - component: {fileID: 723704926}
-  - component: {fileID: 723704927}
+  - component: {fileID: 723704928}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723704920}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &723704927
+--- !u!114 &723704928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1043,12 +1043,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 723704920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74af1bd4443e52a4ca96a18b61a3cdd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 30ecd330297c2f14786cd184e9509946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 1.5
-  forward: {fileID: 2075790525}
-  speed: 10
+  moveSpeed: 500
+  orientation: {fileID: 2075790525}
 --- !u!1 &736842427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,8 +1570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 723704925}
-  portal: {fileID: 1982277200}
-  otherPortal: {fileID: 244217228}
+  portal: {fileID: 1154503023}
+  otherPortal: {fileID: 1149258919}
 --- !u!114 &1236217046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,8 +1819,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 723704925}
-  portal: {fileID: 244217228}
-  otherPortal: {fileID: 1982277200}
+  portal: {fileID: 1149258919}
+  otherPortal: {fileID: 1154503023}
 --- !u!114 &1339849805
 MonoBehaviour:
   m_ObjectHideFlags: 0
