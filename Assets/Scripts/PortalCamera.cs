@@ -8,11 +8,6 @@ public class PortalCamera : MonoBehaviour
     public Transform portal;
     public Transform otherPortal;
 
-    //private void Update()
-    //{
-    //    transform.position = new Vector3(playerCamera.position.x + 25, playerCamera.position.y, playerCamera.position.z);
-    //}
-
     void Update()
     {
         Vector3 playerOffsetFromPortal = playerCamera.position - otherPortal.position;

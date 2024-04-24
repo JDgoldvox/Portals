@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: f6dd44b133c37cd4ba8c460cd8e66eac,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1384,7 +1385,7 @@ GameObject:
   - component: {fileID: 1149258921}
   - component: {fileID: 1149258920}
   m_Layer: 0
-  m_Name: renderPlane
+  m_Name: renderPlaneA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1467,7 +1468,7 @@ GameObject:
   - component: {fileID: 1154503025}
   - component: {fileID: 1154503024}
   m_Layer: 0
-  m_Name: renderPlane
+  m_Name: renderPlaneB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
