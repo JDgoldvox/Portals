@@ -29,5 +29,5 @@ public class PortalTextureSetup : MonoBehaviour
         cameraMatB.mainTexture = cameraB.targetTexture;
     }
 
-  
+
 }
