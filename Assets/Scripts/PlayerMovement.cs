@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalInput;
     float verticalInput;
 
+    bool stopPos = false;
+
     Vector3 moveDirection;
 
     Rigidbody rb;
@@ -27,11 +29,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        //when player presses escape, stop movement
+        if (Input.GetKeyDown(KeyCode.Escape) && !stopPos)
+        {
+            stopPos = true;
+        }
+        else //when player presses escape, start movement
+        {
+            stopPos = false;
+        }
+
+        if (!stopPos)
+        {
+            MovePlayer();
+        }
+        
     }
 
     private void MyInput()
     {
+        //gather Axis
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
     }
@@ -40,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //calc move dir
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        //add force to movement dir
         rb.AddForce(moveDirection * moveSpeed, ForceMode.Force);
     }
 }

@@ -6,10 +6,9 @@ using UnityEngine;
 public class CamAlwaysMoveWithPlayer : MonoBehaviour
 {
     public GameObject camera;
-
-    // Update is called once per frame
     void Update()
     {
+        //move this object over to camera position
         transform.position = camera.transform.position;
     }
 }

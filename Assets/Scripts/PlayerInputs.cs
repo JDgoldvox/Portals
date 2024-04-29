@@ -11,18 +11,11 @@ public class NewBehaviourScript : MonoBehaviour
     public float speed;
 
     InputAction move, look;
-
-    void Start()
-    {
-       
-    }
-
     private void Awake()
     {
         S_PlayerInputActions = new PlayerInputActions();
         rb = GetComponent<Rigidbody>();
         move = S_PlayerInputActions.Player.Move;
-        look = S_PlayerInputActions.Player.Look;
     }
 
     private void OnEnable()
