@@ -13,7 +13,6 @@ Shader "Unlit/ScreenCutoutShader"
 		Cull Back
 		ZWrite On
 		ZTest Less
-		Cull Off
 		
 		Fog{ Mode Off }
 
