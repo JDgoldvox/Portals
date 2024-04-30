@@ -3046,7 +3046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &986841030
 Transform:
   m_ObjectHideFlags: 0
@@ -4969,9 +4969,8 @@ GameObject:
   - component: {fileID: 1697819159}
   - component: {fileID: 1697819162}
   - component: {fileID: 1697819161}
-  - component: {fileID: 1697819160}
   m_Layer: 0
-  m_Name: Window Swirly (1)
+  m_Name: Window static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4992,28 +4991,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1619100458}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!64 &1697819160
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697819158}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1697819161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5034,7 +5011,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a13d9457bcfd13d488e92af0ea93388b, type: 2}
+  - {fileID: 2100000, guid: 742ddf0e7ad1b1b4a82a2be8bf34a3d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
