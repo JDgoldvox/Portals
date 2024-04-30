@@ -130,7 +130,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1651368909}
+    m_TransformParent: {fileID: 244217228}
     m_Modifications:
     - target: {fileID: 7455618920294731346, guid: 2885e0a904f9d1f42bd479ca7dcfcb07,
         type: 3}
@@ -145,7 +145,7 @@ PrefabInstance:
     - target: {fileID: 7522694109852227139, guid: 2885e0a904f9d1f42bd479ca7dcfcb07,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 7522694109852227139, guid: 2885e0a904f9d1f42bd479ca7dcfcb07,
         type: 3}
@@ -444,6 +444,7 @@ Transform:
   - {fileID: 1651765744}
   - {fileID: 1975403862}
   - {fileID: 1949282151}
+  - {fileID: 124626303}
   m_Father: {fileID: 1651368909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &286566619
@@ -1473,7 +1474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &536241946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,7 +1482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536241945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9470135eb83bb3a4d8a64c82df00aa73, type: 3}
   m_Name: 
@@ -1915,7 +1916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &677984322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,7 +3835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80181626f752aac4aba660e62fab070c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 723704925}
+  playerCamera: {fileID: 1076052337}
   portal: {fileID: 1154503023}
   otherPortal: {fileID: 1149258919}
 --- !u!114 &1236217046
@@ -3940,7 +3941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236217044}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25, y: 1.63, z: 6.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4264,7 +4265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80181626f752aac4aba660e62fab070c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 723704925}
+  playerCamera: {fileID: 1076052337}
   portal: {fileID: 1149258919}
   otherPortal: {fileID: 1154503023}
 --- !u!114 &1339849805
@@ -4370,7 +4371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339849803}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.63, z: 6.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4872,7 +4873,6 @@ Transform:
   m_Children:
   - {fileID: 317004770}
   - {fileID: 244217228}
-  - {fileID: 124626303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651765743
@@ -5470,7 +5470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1936582694
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class PortalTextureSetup : MonoBehaviour
     public Camera cameraB;
     public Material cameraMatB;
 
+    //rescales target texture
     void Start()
     {
         if (cameraA.targetTexture != null)

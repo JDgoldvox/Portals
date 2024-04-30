@@ -10,11 +10,14 @@ public class PortalCamera : MonoBehaviour
 
     void Update()
     {
+        //calculate distance between player and portal
         Vector3 playerOffsetFromPortal = playerCamera.position - otherPortal.position;
         transform.position = portal.position + playerOffsetFromPortal;
 
+        //Find angular difference between portal rotations
         float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portal.rotation, otherPortal.rotation);
 
+        //use angle
         Quaternion portalRotationalDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
         Vector3 newCameraDirection = portalRotationalDifference * playerCamera.forward;
         transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
