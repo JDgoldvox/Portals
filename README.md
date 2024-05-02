@@ -1,3 +1,3 @@
-WASD to move c
-Escape to pause camera v
-Escape to unpause camera v
+WASD to move \n
+Escape to pause camera \n
+Escape to unpause camera \n
